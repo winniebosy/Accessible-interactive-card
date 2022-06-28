@@ -10,3 +10,22 @@ Now let’s map the factors that make the single radio button accessible:
     It has to programmatically express its role, so that assistive technologies can read and announce it as a radio button.
     It has to be properly labeled so that it is understandable and interactable for assistive technologies users.
     It has to express its state (checked/unchecked).  
+
+
+    -it is also important to introduce radio wrappers div class across all the radio buttons for better organisation and css styling.
+
+
+     the universal selector to reset the box-sizing method used to border-box. This means that padding and border will be included in the calculation of any elements computed final size instead of increasing the computed size beyond any set dimensions.
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+
+this.value object can be used to get text content of checkboxes or radio buttons in javascript.
+
+Use for of loop to loop through 

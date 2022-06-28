@@ -23,10 +23,10 @@
     <main>
         <div class="container">
             <!-- rating card -->
-            <section class="card-one">
+            <section class="card-one" tabindex="0" aria-label="Rating Card">
                 <fieldset>
                     <legend>
-                        <img role="img" src="images/icon-star.svg" alt="interactive rating">
+                        <img role="img" src="images/icon-star.svg" alt="">
                     </legend>
                     <div class="card-information">
                         <h2 class="card-title">How did we do?</h2>
@@ -56,19 +56,28 @@
                             <label for="rating-5">5</label>
                         </div>
                     </div>
-                    <button type="button" value="submit" id="submit-btn">Submit</button>
+                    <button type="button" value="submit" id="submit-btn" aria-label="Submit Your Rating">Submit</button>
+
                 </fieldset>
             </section>
             <!-- card rating ends here -->
 
 
 
-            <section class="card-two">
+            <section class="card-two hidden" tabindex="0" aria-label="Thank you rating card">
+                <section class="card-header">
+                    <img class="thankyou-img" role="img" src="images/illustration-thank-you.svg" alt="">
+                </section>
+                <section class="card-body">
+                    <p id="rating-response"></p>
+                    <h2 class="card-info">
+                        Thank You&#x21;
+                    </h2>
+                    <p class="card-description">
+                        We appreciate you taking the time to give a rating&#46; If you ever need support&#44;do not hesitate to contact us&#46;
+                    </p>
 
-
-
-
-
+                </section>
             </section>
         </div>
     </main>

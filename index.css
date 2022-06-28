@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root {
     --cardMainColor: #222833;
     --buttonColor: #FC7614;
@@ -6,4 +7,222 @@
     --submitBtn: #FFFFFD;
 }
 
-body {}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #141519;
+}
+
+.container {
+    padding: 2rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.card-one {
+    border-width: 1px;
+    border-color: var(--cardMainColor);
+    width: 420px;
+    height: auto;
+    margin: auto;
+    background-color: var(--cardMainColor);
+    color: #FFFFFD;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 150%;
+    text-align: center;
+    color: #FFFFFD;
+}
+
+legend {
+    padding: 1rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--selectBtnColor);
+    border-color: var(--selectBtnColor);
+    margin: 1.5rem 0 0 0;
+}
+
+.card-subtitle {
+    line-height: 1.5;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1.5rem 1rem;
+    margin-left: -1rem;
+}
+
+input[type="radio"] {
+    border: 1px solid var(--selectBtnColor);
+    background-color: var(--selectBtnColor);
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    appearance: none;
+    margin-top: -0.5rem;
+    cursor: pointer;
+}
+
+label {
+    margin: 0rem -1.9rem -3rem -2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.radio-wrapper {
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+input[type="radio"]:hover {
+    background-color: var(--buttonColor);
+    border-width: 1px;
+    border-color: var(--buttonColor);
+    outline: 1px var(--buttonColor);
+}
+
+input[type="radio"]:focus {
+    background-color: var(--activeStateBtn);
+    border-width: 1px;
+    border-color: var(--activeStateBtn);
+    outline: 1px var(--activeStateBtn);
+}
+
+
+/* hidding the input radio buttons */
+
+button {
+    padding: 10px 30px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--buttonColor);
+    border: 1px solid var(--buttonColor);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--activeStateBtn);
+}
+
+button:focus {
+    outline: 2px dashed var(--buttonColor)
+}
+
+
+/* first card styling ends here */
+
+
+/* second card styling */
+
+.card-two {
+    border-width: 1px;
+    border-color: var(--cardMainColor);
+    width: 420px;
+    height: auto;
+    margin: auto;
+    background-color: var(--cardMainColor);
+    color: #FFFFFD;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.card-header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-info {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.card-info+.card-description {
+    line-height: 1.5;
+}
+
+#rating-response {
+    text-align: center;
+    border: 1px solid var(--buttonColor);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* second card styling ends here */
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+    .card-one {
+        border-width: 1px;
+        border-color: var(--cardMainColor);
+        width: 300px;
+        height: auto;
+        margin: auto;
+        background-color: var(--cardMainColor);
+        color: #FFFFFD;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    input[type="radio"] {
+        border: 1px solid var(--selectBtnColor);
+        background-color: var(--selectBtnColor);
+        padding: 1.1rem 1.1rem;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        appearance: none;
+        margin-top: -0.5rem;
+    }
+    label {
+        font-size: 0.8rem;
+    }
+    .rating {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 1rem 1rem;
+        margin-left: -1rem;
+    }
+    .card-two {
+        width: 300px;
+    }
+}
